@@ -4,7 +4,7 @@ Replaces `winit` in favor of SDL3. It might be limited compared to the `bevy_win
 Only proper use case I've found is for detecting pressure on a Wacom pen. Since [winit didn't implemented this yet](https://github.com/rust-windowing/winit/pull/2396).
 
 ### Getting started
-An simple running example is [provided](./examples/simple.rs). As seen, you need to add `Sdl3Plugin` and disable `WinitPlugin` in order to use it properly.
+A simple running example is [provided](./examples/simple.rs). As seen, you need to add the `Sdl3Plugin` and disable the `WinitPlugin` in order to use it properly.
 
 ```rs
 use bevy::prelude::*;
