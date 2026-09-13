@@ -1,0 +1,34 @@
+[package]
+name = "bevy_mod_sdl3"
+version = "0.0.1"
+edition = "2024"
+
+[features]
+#use-pkg-config = ["sdl3/use-pkg-config"]
+#use-vcpkg = ["sdl3/use-vcpkg"]
+#static-link = ["sdl3/static-link"]
+#link-framework = ["sdl3/link-framework"]
+#build-from-source = ["sdl3/build-from-source"]
+#build-from-source-static = ["sdl3/build-from-source-static"]
+#build-from-source-unix-console = ["sdl3/build-from-source-unix-console"]
+default = ["clipboard"]
+clipboard = ["bevy_clipboard"]
+
+[dependencies]
+bevy_app = "0.19.1"
+bevy_clipboard = { version = "0.19.1", optional = true }
+bevy_derive = "0.19.1"
+bevy_ecs = "0.19.1"
+bevy_input = { version = "0.19.1", features = ["touch", "mouse", "keyboard"] }
+bevy_log = "0.19.1"
+bevy_math = "0.19.1"
+bevy_platform = "0.19.1"
+bevy_window = "0.19.1"
+raw-window-handle = "0.6.2"
+sdl3 = { version = "0.18.4", features = ["raw-window-handle"] }
+
+[dev-dependencies]
+bevy = "0.19.1"
+
+[[example]]
+name = "simple"
