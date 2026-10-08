@@ -4,13 +4,13 @@ version = "0.0.1"
 edition = "2024"
 
 [features]
-#use-pkg-config = ["sdl3/use-pkg-config"]
-#use-vcpkg = ["sdl3/use-vcpkg"]
-#static-link = ["sdl3/static-link"]
-#link-framework = ["sdl3/link-framework"]
-#build-from-source = ["sdl3/build-from-source"]
-#build-from-source-static = ["sdl3/build-from-source-static"]
-#build-from-source-unix-console = ["sdl3/build-from-source-unix-console"]
+use-pkg-config = ["sdl3/use-pkg-config"]
+use-vcpkg = ["sdl3/use-vcpkg"]
+static-link = ["sdl3/static-link"]
+link-framework = ["sdl3/link-framework"]
+build-from-source = ["sdl3/build-from-source"]
+build-from-source-static = ["sdl3/build-from-source-static"]
+build-from-source-unix-console = ["sdl3/build-from-source-unix-console"]
 default = ["clipboard"]
 clipboard = ["bevy_clipboard"]
 
