@@ -95,7 +95,7 @@ impl Plugin for Sdl3Plugin {
                     check_keyboard_focus_lost,
                 ).chain())
             .add_plugins(SdlInputSystem)
-            .add_observer(|_window: On<Add, Window>, mut resource: ResMut<ShouldSpawnWindows>| -> Result {
+            .add_observer(|_window: On<Add<Window>>, mut resource: ResMut<ShouldSpawnWindows>| -> Result {
                 resource.0 = true;
 
                 Ok(())
